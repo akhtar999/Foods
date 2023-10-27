@@ -1,5 +1,106 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
 
-body {
+/* common styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
   font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* end of common style */
+
+/* section 1 */
+.section-1 {
+  width: 100%;
+  height: 100vh;
+  background-color: #f9f7f3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.section-1-icon i {
+  font-size: 30rem;
+  color: #eb5e28;
+  position: absolute;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.3s;
+}
+.section-1-icon i.change {
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 0.3s 0.3s;
+}
+.section-heading-1 {
+  font-size: 10rem;
+  font-weight: 900;
+  color: #0d1b2a;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 0.5rem;
+}
+
+/* section 2 */
+
+.section-2 {
+  width: 100%;
+  height: 100vh;
+  background-color: #003566;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10rem 0rem;
+}
+.section-heading-2 {
+  font-size: 7rem;
+  font-weight: 900;
+  color: #fff;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 0.5rem;
+  margin-bottom: 5rem;
+}
+.cards-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.cards {
+  border-radius: 10px;
+  width: 30rem;
+  background-color: #ffc300;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.card-img {
+  width: 100%;
+}
+.card-name {
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: 0.3rem;
+  margin: 2rem 0;
+  text-transform: uppercase;
+  color: #1b263b;
+}
+.card-btn {
+  background-color: #2ec4b6;
+  color: #fff;
+  border: none;
+  padding: 1.5rem 2rem;
+  border-radius: 10px;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
 }
